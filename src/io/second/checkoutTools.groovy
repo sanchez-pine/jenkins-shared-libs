@@ -1,7 +1,7 @@
 package io.second
 
-def checkOutFrom(repoUrl, brancheName) {
-    git branche: brancheName, url: repoUrl
+def checkOutFrom(repoUrl, branchName) {
+    git branch: branchName, url: repoUrl
 }
 
 return this
