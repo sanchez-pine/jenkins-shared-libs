@@ -2,10 +2,11 @@
 package io.example
 
 /**
-    * Person class for example
+  * Person class for example
 **/
 
 class Person {
+
     String name
     Integer age
 
@@ -17,4 +18,5 @@ class Person {
     def getAbout() {
         return "Name: ${name} / Age: ${age}"
     }
+
 }
