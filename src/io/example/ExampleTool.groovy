@@ -1,15 +1,17 @@
 package io.example
 
-class Example implements Serializable {
+class ExampleTool implements Serializable {
+
     def env
     def steps
 
-    ExampleTools(env, steps){
+    ExampleTool(env, steps){
         this.env = env
         this.steps = steps
     }
 
     def printEnv(){
-        steps.echo "< Builda ${env.BUILD_ID} on ${env.JOB_NAME} >"
+        steps.echo "< Build ${env.BUILD_ID} on ${env.JOB_NAME} >"
     }
+
 }
